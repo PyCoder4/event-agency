@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* === HERO SECTION === */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.left {
+  width: 35%;
+  background-color: #000;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.branding-top {
+  margin-top: 20px;
+}
+
+.branding-bottom {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+.subtitle {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.contact-button {
+  background-color: white;
+  color: black;
+  padding: 20px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.right {
+  position: relative;
+  width: 65%;
+  height: 100vh;
+  background-image: url('assets/images/Header.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; 
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0, 0.8) 50%, transparent);
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px 40px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 3;
+  text-shadow: 0 0 5px black; /* можно убрать при необходимости */
+}
+
+/* === ABOUT SECTION === */
+.about {
+  padding: 80px 40px;
+  background-color: black;
+  color: white;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  color: #ccc;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.staff-member {
+  text-align: center;
+}
+
+.staff-photo {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.staff-role {
+  font-size: 14px;
+  color: #888;
+}
+
+/* === SERVICES SECTION === */
+.services {
+
+}
+
+/* === PORTFOLIO SECTION === */
+.portfolio {
+
+}
+
+/* === TESTIMONIALS SECTION === */
+.testimonials {
+
+}
+
+/* === CONTACT SECTION === */
+.contact {
+
+}
+
